@@ -1,11 +1,13 @@
 === Format of folders ===
-/Days
---/Day
-----problem.txt
-----sample.txt
-----/UserName (ex: rdevau/)
-------whatever files you want (ex: solution.js, sample.json)
 
+-   Days/
+    -   Day/ (e.g. 1/)
+        -   problem.txt
+        -   sample.txt
+        -   userName/ (e.g. rdevau/)
+            -   Whatever files you need (e.g. sample.json, solution.js)
+
+Please do your best not to use AI, but this isn't graded or anything
 You can just clone this down and use it in your own repo if you want
 
 Otherwise, thinking the format will look like this
