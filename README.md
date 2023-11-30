@@ -3,5 +3,5 @@ Format of folders
 --/Day
 ----problem.txt
 ----sample.txt
-----/User
-------whatever files you want
+----/UserName (ex: ryan_devault/)
+------whatever files you want (ex: solution.js)
