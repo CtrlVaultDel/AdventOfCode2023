@@ -1,7 +1,21 @@
-Format of folders
+=== Format of folders ===
 /Days
 --/Day
 ----problem.txt
 ----sample.txt
-----/UserName (ex: ryan_devault/)
-------whatever files you want (ex: solution.js)
+----/UserName (ex: rdevau/)
+------whatever files you want (ex: solution.js, sample.json)
+
+You can just clone this down and use it in your own repo if you want
+
+Otherwise, thinking the format will look like this
+
+1. New day unlocks
+2. Someone will make a new branch (ex: rdevau/day1-init) get the information from the website and store it for everyone
+   (ex: Day1 problem.txt & sample.txt will be updated to actually have the data)
+3. Users create their own branch off of that (ex: "rdevau/day1")
+4. Within the specific days folder create a folder for yourself and put whatever files you need in there
+   (ex: Days/1/rdevau)
+   For me I may convert the txt file into JSON and have a solution file (sample.json & solution.js)
+5. Feel free to merge your code back into the project since the only thing that should be changed is your own personal folder within a given day.
+6. Have fun!
