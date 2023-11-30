@@ -7,10 +7,11 @@
         -   userName/ (e.g. rdevau/)
             -   Whatever files you need (e.g. sample.json, solution.js)
 
-Please do your best not to use AI, but this isn't graded or anything
-You can just clone this down and use it in your own repo if you want
+Please do your best not to use AI, but this isn't graded.
 
-Otherwise, thinking the format will look like this
+Feel free to clone this down and use it in your own repo instead of updating here if you'd prefer to do so.
+
+Otherwise, the format will look like this:
 
 1. New day unlocks
 2. Someone will make a new branch (ex: rdevau/day1-init) get the information from the website and store it for everyone
