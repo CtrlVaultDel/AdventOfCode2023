@@ -1,14 +1,16 @@
 use std::cmp::Ordering;
 use std::fs;
 use std::error::Error;
+use std::time::SystemTime;
 
 
 fn main() -> Result<(), Box<dyn Error>>{
+    let start_time = SystemTime::now();
     let input: String = fs::read_to_string("input/input.txt")?.parse()?;
     let lines: Vec<&str> = input.split("\r\n").collect();
     let mut sum = 0;
 
-    let mut line_count = 1;
+    //let mut line_count = 1;
 
     for line in &lines {
         let _num_index1 = 0;
@@ -17,7 +19,7 @@ fn main() -> Result<(), Box<dyn Error>>{
         let _num_two_set = false;
         let mut count = 0;
         let mut nums = get_word_nums(line);
-        println!("{:?}", line);
+        //println!("{:?}", line);
         for c in line.chars(){
             if c.is_numeric() {
                 let num_index = NumIndex{
@@ -31,15 +33,16 @@ fn main() -> Result<(), Box<dyn Error>>{
         nums.sort_by(|one, two| one.cmp(two));
         let letter1 = nums[0].num.to_string();
         let letter2 = nums[nums.len()-1].num.to_string();
-        println!("nums: {:?}", nums);
+        //println!("nums: {:?}", nums);
 
         let num = letter1.to_string() + &letter2.to_string();
-        println!("line: {}, num: {:?}", line_count, num);
+        //println!("line: {}, num: {:?}", line_count, num);
         sum += num.parse::<usize>().unwrap();
-        line_count += 1;
+        //line_count += 1;
     }
-
-    println!("sum: {}", sum);
+    let end_time = SystemTime::now();
+    let time_taken = end_time.duration_since(start_time).expect("Clock may have gone backwards");
+    println!("sum: {} \ntime taken: {:?}", sum, time_taken);
     Ok(())
 }
 

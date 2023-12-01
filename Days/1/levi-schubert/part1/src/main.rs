@@ -1,13 +1,15 @@
 use std::fs;
 use std::error::Error;
+use std::time::SystemTime;
 
 
 fn main() -> Result<(), Box<dyn Error>>{
+    let start_time = SystemTime::now();
     let input: String = fs::read_to_string("input/input.txt")?.parse()?;
     let lines: Vec<&str> = input.split("\r\n").collect();
     let mut sum = 0;
 
-    let mut line_count = 1;
+    //let mut line_count = 1;
 
     for line in &lines {
         let mut num_index1 = 0;
@@ -31,12 +33,13 @@ fn main() -> Result<(), Box<dyn Error>>{
             num_index2 = num_index1
         }
         let num = line.chars().nth(num_index1).unwrap().to_string() + &line.chars().nth(num_index2).unwrap().to_string();
-        println!("line: {}, num: {:?}", line_count, num);
+        //println!("line: {}, num: {:?}", line_count, num);
         sum += num.parse::<usize>().unwrap();
-        line_count += 1;
+        //line_count += 1;
     }
-
-    println!("{}", sum);
+    let end_time = SystemTime::now();
+    let time_taken = end_time.duration_since(start_time).expect("Clock may have gone backwards");
+    println!("sum: {} \ntime taken: {:?}", sum, time_taken);
     Ok(())
 }
 
