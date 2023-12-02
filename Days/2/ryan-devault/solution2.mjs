@@ -1,4 +1,4 @@
-// To Test:
+// To Test: (Need formulahendry.code-runner extension)
 // 1. Click in file
 // 2. Ctrl + Alt + N
 import { getInput, getPerformance, logAnswer } from "../../../templates/ryan-devault/commonHelper.mjs"
@@ -6,13 +6,13 @@ import { getInput, getPerformance, logAnswer } from "../../../templates/ryan-dev
 async function d2s2(){
     const input = await getInput("./Days/2/ryan-devault/input.txt");
     return input.reduce((acc, game) => {
-        const gameData = game.split(": ")
-        const rounds = gameData[1].replace("\r", "").split("; ")
         const cubes = {
             red: 0,
             green: 0,
             blue: 0
         }
+        const gameData = game.split(": ")
+        const rounds = gameData[1].replace("\r", "").split("; ")
         rounds.forEach(round => {
             const picks = round.split(", ")
             return picks.forEach(pick => {

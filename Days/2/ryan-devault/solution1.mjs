@@ -1,13 +1,8 @@
-// To Test:
+// To Test: (Need formulahendry.code-runner extension)
 // 1. Click in file
 // 2. Ctrl + Alt + N
 import { getInput, getPerformance, logAnswer } from "../../../templates/ryan-devault/commonHelper.mjs"
 
-// Possible configuration of games
-// 12 Red Cubes
-// 13 Green Cubes
-// 14 Blue Cubes
-// Answer = sum of game ids that are possible games
 async function d2s1(){
     const input = await getInput("./Days/2/ryan-devault/input.txt");  
     const MAX_VALUES = {

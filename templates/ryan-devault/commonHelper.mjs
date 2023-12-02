@@ -1,4 +1,5 @@
 import fs from 'fs/promises';
+import { artMap } from './artMap.mjs';
 
 export async function getInput(filePath) {
     try {
@@ -6,7 +7,7 @@ export async function getInput(filePath) {
         return data.split("\n");
     } catch (err) {
         console.error(err);
-        return null;
+        return [];
     }
 }
 
@@ -15,11 +16,26 @@ export async function getPerformance(testFunction, numTests = 10){
     for(let i = 0; i < numTests; i++){
         await testFunction()
     }
-    const avgPerformance = (performance.now() - startTime)/numTests
-    console.log(`${numTests} tests ran. Average performance: ${avgPerformance.toFixed(2)}ms`)
+    const avgTime = (performance.now() - startTime)/numTests
+    logAsASCII(`AVG TIME: ${avgTime.toFixed(2)}ms`)
+    console.log(`${numTests} tests ran.`)
 }
 
 export async function logAnswer(func){
     const answer = await func();
-    console.log("Answer:", answer);
+    logAsASCII(`ANSWER: ${answer}`)
+}
+
+export function logAsASCII(input) {
+    const stringValue = String(input).toUpperCase();
+    const charArray = [...stringValue];
+  
+    // Get the array of ASCII art for each character
+    const artArray = charArray.map(char => artMap[char]);
+  
+    // Log the concatenated lines horizontally
+    for (let i = 0; i < artArray[0].split('\n').length; i++) {
+        const line = artArray.map(art => art.split('\n')[i]).join(' ');
+        console.log(line);
+    }
 }
