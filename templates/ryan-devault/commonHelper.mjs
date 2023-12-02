@@ -11,13 +11,11 @@ export async function getInput(filePath) {
 }
 
 export async function getPerformance(testFunction, numTests = 10){
-    let performanceTimes = [];
+    const startTime = performance.now();
     for(let i = 0; i < numTests; i++){
-        const startTime = performance.now();
         await testFunction()
-        performanceTimes.push(performance.now() - startTime);
     }
-    const avgPerformance = performanceTimes.reduce((acc, cur) => acc += cur, 0)/performanceTimes.length
+    const avgPerformance = (performance.now() - startTime)/numTests
     console.log(`${numTests} tests ran. Average performance: ${avgPerformance.toFixed(2)}ms`)
 }
 
