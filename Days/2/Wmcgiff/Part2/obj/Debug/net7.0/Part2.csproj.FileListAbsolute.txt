@@ -1,0 +1,14 @@
+/Users/williammcgiffert/Desktop/Repos/AdventOfCode2023/Days/2/Wmcgiff/Part2/bin/Debug/net7.0/Part2
+/Users/williammcgiffert/Desktop/Repos/AdventOfCode2023/Days/2/Wmcgiff/Part2/bin/Debug/net7.0/Part2.deps.json
+/Users/williammcgiffert/Desktop/Repos/AdventOfCode2023/Days/2/Wmcgiff/Part2/bin/Debug/net7.0/Part2.runtimeconfig.json
+/Users/williammcgiffert/Desktop/Repos/AdventOfCode2023/Days/2/Wmcgiff/Part2/bin/Debug/net7.0/Part2.dll
+/Users/williammcgiffert/Desktop/Repos/AdventOfCode2023/Days/2/Wmcgiff/Part2/bin/Debug/net7.0/Part2.pdb
+/Users/williammcgiffert/Desktop/Repos/AdventOfCode2023/Days/2/Wmcgiff/Part2/obj/Debug/net7.0/Part2.GeneratedMSBuildEditorConfig.editorconfig
+/Users/williammcgiffert/Desktop/Repos/AdventOfCode2023/Days/2/Wmcgiff/Part2/obj/Debug/net7.0/Part2.AssemblyInfoInputs.cache
+/Users/williammcgiffert/Desktop/Repos/AdventOfCode2023/Days/2/Wmcgiff/Part2/obj/Debug/net7.0/Part2.AssemblyInfo.cs
+/Users/williammcgiffert/Desktop/Repos/AdventOfCode2023/Days/2/Wmcgiff/Part2/obj/Debug/net7.0/Part2.csproj.CoreCompileInputs.cache
+/Users/williammcgiffert/Desktop/Repos/AdventOfCode2023/Days/2/Wmcgiff/Part2/obj/Debug/net7.0/Part2.dll
+/Users/williammcgiffert/Desktop/Repos/AdventOfCode2023/Days/2/Wmcgiff/Part2/obj/Debug/net7.0/refint/Part2.dll
+/Users/williammcgiffert/Desktop/Repos/AdventOfCode2023/Days/2/Wmcgiff/Part2/obj/Debug/net7.0/Part2.pdb
+/Users/williammcgiffert/Desktop/Repos/AdventOfCode2023/Days/2/Wmcgiff/Part2/obj/Debug/net7.0/Part2.genruntimeconfig.cache
+/Users/williammcgiffert/Desktop/Repos/AdventOfCode2023/Days/2/Wmcgiff/Part2/obj/Debug/net7.0/ref/Part2.dll
