@@ -14,3 +14,18 @@ fn main() -> Result<(), Box<dyn Error>>{
     println!("answer: {} \ntime taken: {:?}", answer, time_taken);
     Ok(())
 }
+
+fn process_line(line: &str) -> String {
+    return "to-do".to_string();
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_one(){
+        let result = process_line("");
+        assert_eq!(result, "result");
+    }
+}
