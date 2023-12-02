@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/williammcgiffert/Desktop/Repos/AdventOfCode2023/Days/1/wmcgiff/wmcgiff.csproj",
+      "projectUniqueName": "/Users/williammcgiffert/Desktop/Repos/AdventOfCode2023/Days/1/wmcgiff/Part1/wmcgiff.csproj",
       "projectName": "wmcgiff",
-      "projectPath": "/Users/williammcgiffert/Desktop/Repos/AdventOfCode2023/Days/1/wmcgiff/wmcgiff.csproj",
+      "projectPath": "/Users/williammcgiffert/Desktop/Repos/AdventOfCode2023/Days/1/wmcgiff/Part1/wmcgiff.csproj",
       "packagesPath": "/Users/williammcgiffert/.nuget/packages/",
-      "outputPath": "/Users/williammcgiffert/Desktop/Repos/AdventOfCode2023/Days/1/wmcgiff/obj/",
+      "outputPath": "/Users/williammcgiffert/Desktop/Repos/AdventOfCode2023/Days/1/wmcgiff/Part1/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/williammcgiffert/.nuget/NuGet/NuGet.Config"
