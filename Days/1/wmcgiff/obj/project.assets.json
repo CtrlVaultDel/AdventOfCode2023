@@ -8,24 +8,26 @@
     "net7.0": []
   },
   "packageFolders": {
-    "/Users/williammcgiffert/.nuget/packages/": {}
+    "C:\\Users\\Nedas\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/williammcgiffert/Desktop/Repos/AdventOfCode2023/Days/1/wmcgiff/wmcgiff.csproj",
+      "projectUniqueName": "C:\\Users\\Nedas\\workspace\\AdventOfCode2023\\Days\\1\\wmcgiff\\wmcgiff.csproj",
       "projectName": "wmcgiff",
-      "projectPath": "/Users/williammcgiffert/Desktop/Repos/AdventOfCode2023/Days/1/wmcgiff/wmcgiff.csproj",
-      "packagesPath": "/Users/williammcgiffert/.nuget/packages/",
-      "outputPath": "/Users/williammcgiffert/Desktop/Repos/AdventOfCode2023/Days/1/wmcgiff/obj/",
+      "projectPath": "C:\\Users\\Nedas\\workspace\\AdventOfCode2023\\Days\\1\\wmcgiff\\wmcgiff.csproj",
+      "packagesPath": "C:\\Users\\Nedas\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Nedas\\workspace\\AdventOfCode2023\\Days\\1\\wmcgiff\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/williammcgiffert/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Nedas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -59,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.400/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

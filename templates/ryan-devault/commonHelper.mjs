@@ -9,3 +9,17 @@ export async function getInput(filePath) {
         return null;
     }
 }
+
+export async function getPerformance(testFunction, numTests = 10){
+    const startTime = performance.now();
+    for(let i = 0; i < numTests; i++){
+        await testFunction()
+    }
+    const avgPerformance = (performance.now() - startTime)/numTests
+    console.log(`${numTests} tests ran. Average performance: ${avgPerformance.toFixed(2)}ms`)
+}
+
+export async function logAnswer(func){
+    const answer = await func();
+    console.log("Answer:", answer);
+}
