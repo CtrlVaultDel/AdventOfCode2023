@@ -1,6 +1,7 @@
 use std::fs;
 use std::error::Error;
 use std::time::SystemTime;
+use substring::Substring;
 
 fn main() -> Result<(), Box<dyn Error>>{
     let start_time = SystemTime::now();
