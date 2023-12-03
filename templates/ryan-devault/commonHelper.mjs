@@ -1,10 +1,10 @@
 import fs from 'fs/promises';
 import { artMap } from './artMap.mjs';
 
-export async function getInput(filePath) {
+export async function getInput(filePath, splitNewLine = true) {
     try {
         const data = await fs.readFile(filePath, 'utf8');
-        return data.split("\n");
+        return splitNewLine ? data.split("\n") : data;
     } catch (err) {
         console.error(err);
         return [];
