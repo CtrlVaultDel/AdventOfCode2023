@@ -4,14 +4,15 @@
 import { getInput, getPerformance, logAnswer } from "../../../templates/ryan-devault/commonHelper.mjs"
 
 async function d3s1(){
-    // const input = await getInput("./Days/3/ryan-devault/input.txt");
-    const input = await getInput("./Days/3/sample.txt");
+    // const input = await getInput("./Days/3/sample.txt");
+    const input = await getInput("./Days/3/ryan-devault/input.txt");
     const sanitizedInput = input.map(line => line.replace("\r", ""))
-    const matrix = sanitizedInput.map(line => Array.from(line).map(char => /[*#+%&@=$-]/.test(char) ? 'x' : char))
+    const maxRowIdx = sanitizedInput[0].length - 1;
+    const matrix = sanitizedInput.map(line => Array.from(line).map(char => /[\*#\+%&@=$\-/]/g.test(char) ? 'x' : char))
     let sum = 0;
     for(let i = 0; i < matrix.length; i++){
         let idx = 0;
-        for(let j = 0; j <= 9; j++){
+        for(let j = 0; j <= maxRowIdx; j++){
             const curVal = matrix[i][j];
             // Skip if already worked on or is not a number
             if(idx > j || curVal === "x" || curVal  === ".") continue;
@@ -30,8 +31,8 @@ async function d3s1(){
                 let start = j - 1 < 0 
                     ? 0 
                     : j - 1;
-                let end = idx + 1 > 9 
-                    ? 9 
+                let end = idx + 1 > maxRowIdx
+                    ? maxRowIdx 
                     : idx + 1;
 
                 // Get row above with one extra on each side
@@ -50,8 +51,5 @@ async function d3s1(){
     }
     return sum;
 }
-console.log(await d3s1())
-// logAnswer(d3s1);
-// getPerformance(d3s1);
-
-// 29509 is too low
+logAnswer(d3s1);
+getPerformance(d3s1);
